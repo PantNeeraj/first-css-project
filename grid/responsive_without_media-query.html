@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_without_media-query</title>
+
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            grid-gap: 1rem;
+            grid-template-rows: 2rem;
+        }
+        .items{
+            border: 1px solid red ;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="items items-1">1</div>
+    <div class="items items-2">2</div>
+    <div class="items items-3">3</div>
+    <div class="items items-4">4</div>
+    <div class="items items-5">5</div>
+</div>
+
+
+    
+</body>
+</html>

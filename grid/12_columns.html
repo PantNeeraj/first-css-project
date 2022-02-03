@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12_columns</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 25% 50%;
+        grid-template-rows: 100px;
+        border: 1px solid grey;
+        grid-column-gap: 10px;
+        height: 50vh;
+        justify-content: center;
+        grid-template-rows: 100%;
+      }
+      .items {
+        border: 1px solid red;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items items-1">1</div>
+      <div class="items items-2">2</div>
+    </div>
+  </body>
+</html>

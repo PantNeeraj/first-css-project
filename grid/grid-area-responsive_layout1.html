@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_layout1</title>
+    <style>
+.container{
+    display: grid;
+    padding: 20px 20px;
+    grid-template-rows: 50px 50px 200px 50px;
+   grid-column-gap: 5px;
+   grid-row-gap :5px ;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar navigation navigation navigation ads"
+    "sidebar main main main ads"
+    "footer footer footer footer footer";
+
+}
+
+.items{
+    border: 1px solid red;
+    border-radius: 2px;
+
+}
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: navigation;
+}
+
+.item-3{
+    grid-area: main;
+}
+
+.item-4{
+    grid-area: sidebar;
+}
+
+.item-5{
+    grid-area: ads;
+}
+
+.item-6{
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px){
+   .container{
+       grid-template-rows:50px 50px 200px 50px;
+    grid-template-areas: 
+    "   header header header header header"
+    "navigation navigation navigation navigation navigation"
+    "sidebar  main main main main"
+    "ads  footer footer footer footer";
+
+
+} 
+}
+@media screen and (max-width:425px){
+   .container{
+       grid-template-rows:50px 50px 200px 50px 50px 50px;
+    grid-template-areas: 
+    "   header header header header header"
+    "navigation navigation navigation navigation navigation"
+    "main  main main main main"
+    "sidebar  sidebar sidebar sidebar sidebar "
+    "ads ads ads ads  ads"
+
+    "footer footer footer footer footer";
+
+
+} 
+}
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="items item-1">header</div>
+    <div class="items item-2">navigation</div>
+    <div class="items item-3">main</div>
+    <div class="items item-4">sidebar</div>
+    <div class="items item-5">ads</div>
+    <div class="items item-6">footer</div>
+</div>
+
+    
+    
+</body>
+</html>

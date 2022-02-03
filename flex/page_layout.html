@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page_layout</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .items {
+        border: 1px solid red;
+        border-radius: 2px;
+      }
+      .item-1 {
+        flex-basis: 100%;
+      }
+      .container-2 {
+        display: flex;
+        margin: 5px;
+      }
+      .items.item-2,
+      .items.item-4 {
+        flex-basis: 15%;
+        height: 332px;
+      }
+      .items.item-5 {
+        margin: 5px 2px;
+        height: 275px;
+      }
+      .container-3 {
+        flex-basis: 70%;
+      }
+      .item-3 {
+        margin: 0 2px;
+      }
+      .item-1,
+      .item-3,
+      .item-6 {
+        min-height: 50px;
+      }
+      @media screen and (max-width:768px) {
+          
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item-1">header</div>
+      <div class="container-2">
+        <div class="items item-2">sidebar</div>
+        <div class="container-3">
+          <div class="items item-3">navigation</div>
+
+          <div class="items item-5">main</div>
+        </div>
+
+        <div class="items item-4">ads</div>
+      </div>
+
+      <div class="items item-6">footer</div>
+    </div>
+  </body>
+</html>
